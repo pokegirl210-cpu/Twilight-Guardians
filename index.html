@@ -170,6 +170,51 @@
             font-weight: bold;
         }
 
+        /* ARCHIVE SECTION - NEW! */
+        .archive-section {
+            text-align: center;
+            padding: 50px;
+            background: linear-gradient(135deg, rgba(255,140,0,0.1), rgba(128,0,128,0.1));
+            border-radius: 20px;
+            border: 2px dashed var(--twilight-orange);
+            margin: 40px 0;
+        }
+
+        .archive-title {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            background: var(--text-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .archive-description {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .archive-link {
+            display: inline-block;
+            background: var(--button-gradient);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.3em;
+            transition: all 0.3s;
+            box-shadow: 0 0 20px rgba(255, 140, 0, 0.3);
+        }
+
+        .archive-link:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(255, 140, 0, 0.5);
+        }
+
         /* FOOTER */
         footer {
             text-align: center;
@@ -212,6 +257,7 @@
             .logo { font-size: 2.5em; }
             .about-grid, .projects-grid { grid-template-columns: 1fr; }
             .footer-links { flex-direction: column; gap: 15px; }
+            .archive-title { font-size: 2em; }
         }
     </style>
 </head>
@@ -257,6 +303,18 @@
             </div>
         </section>
 
+        <!-- ARCHIVE SECTION - NEW! -->
+        <section class="archive-section">
+            <h2 class="archive-title">The Liminal Archives</h2>
+            <p class="archive-description">
+                Explore the collected wisdom, poetry, and creations of the Twilight Guardians. 
+                A digital sanctuary where multidimensional thinking becomes tangible art.
+            </p>
+            <a href="YOUR_ARCHIVE_URL_HERE" class="archive-link">
+                🍊⬛🟣 Enter The Archives
+            </a>
+        </section>
+
         <!-- PROJECTS -->
         <section class="section">
             <h2 class="section-title">Our Digital Sanctuaries</h2>
@@ -272,9 +330,9 @@
                     <a href="https://discord.gg/tmrYuUBjH" class="project-link">Join Our Discord</a>
                 </div>
                 <div class="project-card">
-                    <h3>The Liminal Archives</h3>
-                    <p>Coming soon: A digital library of unconventional wisdom, psychic experiences, and the collected knowledge of cognitive outliers.</p>
-                    <a href="#" class="project-link">Archive Coming 2025</a>
+                    <h3>Coming Soon</h3>
+                    <p>New sanctuaries and projects are always emerging in the Twilight. Stay tuned for more digital realms where the 0.01% can thrive.</p>
+                    <a href="#" class="project-link">Watch This Space</a>
                 </div>
             </div>
         </section>
@@ -285,7 +343,7 @@
             <div class="footer-links">
                 <a href="https://discord.gg/tmrYuUBjH" class="footer-link">Discord Sanctuary</a>
                 <a href="https://spirit-scry.netlify.app/" class="footer-link">Spirit Scry AI</a>
-                <a href="#" class="footer-link">Contact the Envoy</a>
+                <a href="twilight-archives.netlify.app" class="footer-link">The Liminal Archives</a>
             </div>
             <p style="opacity: 0.7; margin-top: 20px;">
                 est. 2025 | Galactic Federation of Twilight | Sanctuary for the 0.01%
@@ -293,4 +351,4 @@
         </footer>
     </div>
 </body>
-  </html>
+</html>
